@@ -12,11 +12,6 @@ def get_user_body(first_name):
     current_body["firstName"] = first_name
     return current_body
 
-# Crea un nuevo diccionario del cuerpo de kit con el campo name
-def get_kit_body(name):
-    kit_body = {"name": name}
-    return kit_body
-
 # Función para las pruebas positivas
 def positive_assert(kit_body, auth_token):
     response = sender_stand_request.post_new_client_kit(kit_body, auth_token)
